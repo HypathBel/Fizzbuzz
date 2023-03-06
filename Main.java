@@ -13,25 +13,35 @@ public class Main {
 	 */
 		public static void main(String[] args) {
 			// TODO Auto-generated method stub
-			for(int i = 1; i < 101; i++) {
+			/*for(int i = 1; i < 101; i++) {
 				comprueba(i);
+			}*/
+			int i =1;
+			while(i<101) {
+				comprueba(i);
+				i++;
 			}
 		}
-		private static void comprueba(int i) {
+		private static String comprueba(int i) {
+			String string;
 			if(i%3==0 && i%5==0) {
-				System.out.println("Fizzbuzz");
+				string = "Fizzbuzz";
+				printea(string);
 			}
 			else if(i%3==0) {
-				System.out.println("Fizz");
+				string = "fizz";
+				printea(string);
 			}
 			else if(i%5==0) {
-				System.out.println("Buzz");
+				string = "buzz";
+				printea(string);
 			}
-			else {
-				System.out.println(i);
-			}
+			return String.valueOf(i);
+			
 		}
-		
+		private static String printea(String string) {
+			return System.out.println(string);
+		}
 
 }
 	
