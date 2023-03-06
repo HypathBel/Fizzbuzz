@@ -17,18 +17,18 @@ public class Main {
 				comprueba(i);
 			}
 		}
-		private static void comprueba(int i) {
+		private static String comprueba(int i) {
 			if(i%3==0 && i%5==0) {
-				System.out.println("Fizzbuzz");
+				return "Fizzbuzz";
 			}
 			else if(i%3==0) {
-				System.out.println("Fizz");
+				return "Fizz";
 			}
 			else if(i%5==0) {
-				System.out.println("Buzz");
+				return "buzz";
 			}
-			else {
-				System.out.println(i);
+			return {
+				String.valueOf(i);
 			}
 		}
 		
